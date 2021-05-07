@@ -93,7 +93,7 @@ namespace ByteBankImportacaoExportacao
                 while (!streamReader.EndOfStream)
                 {
                     var linha = streamReader.ReadLine();
-                    streamWriter.Flush();
+                    streamWriter.Flush();// despeja o buffer do StreamWriter
                     streamWriter.WriteLine(linha);
                 }
             }
